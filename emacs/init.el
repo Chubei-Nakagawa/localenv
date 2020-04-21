@@ -3,7 +3,7 @@
 (setq make-backup-files nil)
 (setq delete-auto-save-files t)
 
-(setq-default tab0width 4 indent-tabs-mode nil)
+(setq-default tab-width 4 indent-tabs-mode nil)
 
 (menu-bar-mode -1)
 
