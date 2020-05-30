@@ -9,4 +9,14 @@ set foldmethod=syntax
 colorscheme murphy
 packloadall
 silent! helptags ALL
+set fileformat=unix
+set fileformats=unix,dos
+
+function! s:set_fileformat()
+    try
+        setlocala fileformat=unix
+    catch
+    endtry
+endfunction
+autocmd BufRead * :call <SID>set_fileformat()
 
