@@ -8,10 +8,8 @@ if [ "${UNAME}" == "MINGW64_NT" ] || [ "${UNAME}" == "MSYS_NT" ] || [ "${UNAME}"
     export GOPATH=${HOME}/env/go
     export PATH="${PATH}:${GOROOT}/bin:${JAVA_HOME}/bin"
 fi
-
-
 # gnustep japanese font
-#defaults write NSGlobalDomain NSFont Takaoゴシック
-#defaults write NSGlobalDomain NSUserFont Takaoゴシック
-#defaults write NSGlobalDomain NSBoldFont Takaoゴシック
+defaults write NSGlobalDomain NSFont IPAGothic
+defaults write NSGlobalDomain NSUserFont IPAGothic
+defaults write NSGlobalDomain NSBoldFont IPAGothic
 
